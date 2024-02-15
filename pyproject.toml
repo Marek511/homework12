@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "restapi project"
+version = "1.7.1"
+description = "OK"
+authors = ["Marek511 <133015058+Marek511@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+databases = "^0.8.0"
+SQLAlchemy = "^1.4.51"
+fastapi = "^0.109.2"
+passlib = "^1.7.4"
+pydantic = "^2.6.1"
+Faker = "^23.2.0"
+python-jose = "^3.3.0"
+python-dotenv = "^1.0.1"
+starlette = "^0.36.3"
+uvicorn = "^0.27.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
