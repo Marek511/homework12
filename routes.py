@@ -54,14 +54,9 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     }
 
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the API!"}
-
-
 @app.get("/secret")
 def read_secret(current_user: User = Depends(get_current_user)):
     return {"message": "You have access to this secret information!", "user_email": current_user.email}
 
 
-app.include_router(contact_router)
+# app.include_router(contact_router)

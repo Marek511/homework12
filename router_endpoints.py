@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 app = FastAPI()
 
-router = APIRouter(prefix='/contacts', tags=['contacts'])
+router = APIRouter(prefix='/contacts')
 
 app.include_router(router)
 
